@@ -37,6 +37,7 @@ public class BasicTest {
     public void setUp(ChromeDriver driver)
     {
         this.driver = driver;
+
         this.driver.manage().timeouts().implicitlyWait(8, TimeUnit.SECONDS);
         this.pages = new PageClient(this.driver, new WebDriverWait(this.driver, 10));
         this.driver.get(ApplicationManager.config.url);

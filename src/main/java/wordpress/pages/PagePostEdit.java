@@ -11,11 +11,6 @@ public class PagePostEdit extends PageObject {
         super(_wd, _waiter);
     }
 
-    public void actionPost(String postName)
-    {
-
-    }
-
     @Step("Закрытие модального окна.")
     public void clickCloseModal()
     {
